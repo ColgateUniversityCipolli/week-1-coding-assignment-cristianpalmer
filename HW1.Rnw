@@ -24,7 +24,7 @@
 \item Let's create some aRt! 
 \begin{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% QUESTION 1a
+% QUESTION 1a 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \item Install the \texttt{aRtsy} package. Provide the code in an R chunk   that does 
   not run. You only need to install it one time.\\
@@ -33,6 +33,7 @@
 % each time I compile
 <<eval=FALSE, size="scriptsize", warning=FALSE, message=FALSE>>=
 # Code to install the aRtsy package
+install.packages("aRtsy")
 @
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % QUESTION 1b
@@ -42,6 +43,7 @@
 \textbf{Solution:}
 % Note here I have removed eval=FALSE so this code will run
 <<size="scriptsize", warning=FALSE, message=FALSE>>=
+library(aRtsy)
 @
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % QUESTION 1c
@@ -53,6 +55,8 @@
 \textbf{Solution:}
 <<CollatzPlot1, eval=FALSE, size="scriptsize", warning=FALSE, message=FALSE>>=
 # help("aRtsy")
+set.seed(1)
+canvas_collatz(colors = colorPalette("tuscany3"))
 @
 %Code to insert a figure [H]ere
 \begin{figure}[H]
