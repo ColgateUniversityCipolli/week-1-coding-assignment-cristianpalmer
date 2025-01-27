@@ -260,6 +260,10 @@ package for \texttt{R}.\citep{aRtsy}
 \textbf{Solution:}
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hldef{my_vector} \hlkwb{<-} \hlnum{0}\hlopt{:}\hlnum{10}
+\hldef{my_vector}
+\end{alltt}
 \begin{verbatim}
 ##  [1]  0  1  2  3  4  5  6  7  8  9 10
 \end{verbatim}
@@ -272,6 +276,10 @@ package for \texttt{R}.\citep{aRtsy}
 \textbf{Solution:} 
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hldef{result_vector} \hlkwb{<-} \hlnum{2}\hlopt{^}\hldef{(my_vector} \hlopt{+} \hlnum{1}\hldef{)} \hlopt{+} \hlnum{2}\hlopt{^}\hldef{(my_vector} \hlopt{-} \hlnum{1}\hldef{)}
+\hldef{result_vector}
+\end{alltt}
 \begin{verbatim}
 ##  [1]    2.5    5.0   10.0   20.0   40.0   80.0  160.0  320.0  640.0 1280.0
 ## [11] 2560.0
@@ -285,6 +293,9 @@ package for \texttt{R}.\citep{aRtsy}
 \textbf{Solution:}
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlkwd{which}\hldef{(result_vector}\hlopt{==}\hlnum{40.0}\hldef{)}
+\end{alltt}
 \begin{verbatim}
 ## [1] 5
 \end{verbatim}
