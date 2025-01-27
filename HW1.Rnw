@@ -163,6 +163,7 @@ canvas_collatz(colors = colorPalette("blossom"),
   the sentence below.
 \textbf{Solution:} We created the generative art in Question 1 using the \texttt{aRtsy}
 package for \texttt{R}.\citep{aRtsy}
+\bibliography{bib}
 \end{enumerate}
 
 \newpage
@@ -179,7 +180,7 @@ package for \texttt{R}.\citep{aRtsy}
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \item Create a numeric vector containing the integers from 0 to 10 inclusive. Hint -- the solution to this problem is one of these values.\\
 \textbf{Solution:}
-<<>>=
+<<echo=FALSE>>=
 my_vector <- 0:10
 my_vector
 @
@@ -188,7 +189,7 @@ my_vector
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \item Complete the algebra to compute $2^{x+1} +2^{x-1}$ for each value in the numerical vector created in step 1. Make sure to save the result to a new numeric vector.\\
 \textbf{Solution:} 
-<<>>==
+<<echo=FALSE>>==
 result_vector <- 2^(my_vector + 1) + 2^(my_vector - 1)
 result_vector
 @
@@ -197,7 +198,7 @@ result_vector
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \item Use the which() function to ask which result is 40.\\
 \textbf{Solution:}
-<<>>==
+<<echo=FALSE>>==
 which(result_vector==40.0)
 @
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -209,7 +210,7 @@ which(result_vector==40.0)
   % QUESTION 2e
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \item Explain why this approach wouldn't work for something like $3^{x+2} + 5 (3^x) = 84$ where the solution is $x \approx 1.6309$.\\
-\textbf{Solution:}
+\textbf{Solution: This approach wouldn't work in this case since the correct value for x is not a whole number. Using the vector approach, x would need to be a whole number for this approach to work.}
 \end{enumerate}
 \end{enumerate}
 
